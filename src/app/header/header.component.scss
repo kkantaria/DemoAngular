@@ -1,0 +1,14 @@
+
+@import '../../scss/variables';
+@import '../../scss/mixins';
+@import '../../scss/typography';
+
+.humburger-menu {
+  cursor: pointer;
+}
+
+.user-dropdown {
+  .usr-act {
+    cursor: pointer;
+  }
+}

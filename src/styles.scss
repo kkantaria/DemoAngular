@@ -1,4 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import './scss/variables';
+@import './scss/mixins';
+@import './scss/typography';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: $font-family-regular;
+  color: $body-gray;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+p {
+  font-family: $font-family-regular;
+  color: $body-gray;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.app-badge {
+  min-width: 57px;
+  line-height: 34px;
+  padding: 0 15px;
+  color: $app-gray-150;
+  background: $app-gray-50;
+  font-family: $font-family-semibold;
+  margin-right:  8px;
+  justify-content: center;
+
+  &.success-badge {
+    background: $light-success-color;
+    color: $dark-success-color;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

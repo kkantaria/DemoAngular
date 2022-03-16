@@ -1,0 +1,217 @@
+@mixin for-ipad-large {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin for-phone-320 {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin for-phone-360 {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin for-phone-375 {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin for-phone-480 {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin for-phone-414 {
+  @media screen and (min-width: 414px) and (max-width: 479px) {
+    @content;
+  }
+}
+@mixin for-phone {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for-phone-portrait {
+  @media screen and (max-width: 575px) {
+    @content;
+  }
+}
+
+@mixin for-phone-landscape {
+  @media screen and (min-width: 568px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for-phone-landscape-in {
+  @media screen and (min-width: 640px) and (max-width: 680px) {
+    @content;
+  }
+}
+
+@mixin for-phone-landscape-up {
+  @media screen and (min-width: 641px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin for-phone-landscape-first {
+  @media screen and (min-width: 481px) and (max-width: 639px) {
+    @content;
+  }
+}
+
+@mixin for-phone-above {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-ipad-all {
+  @media screen and (min-width: 768px) and (max-width: 1179px) {
+    @content;
+  }
+}
+
+@mixin for-ipad {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin for-mob-tablet-only {
+  @media screen and (min-width: 200px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin for-mob-ipad {
+  @media screen and (min-width: 200px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin for-mob-tab-all {
+  @media screen and (min-width: 200px) and (max-width: 1179px) {
+    @content;
+  }
+}
+
+@mixin for-ipad-up-sm {
+  @media screen and (min-width: 992px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin for-ipad-up {
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin for-laptop {
+  @media screen and (min-width: 1024px) and (max-width: 1179px) {
+    @content;
+  }
+}
+
+@mixin for-laptop-desktop {
+  @media screen and (min-width: 1024px) and (max-width: 1365px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-small-desktop-in {
+  @media screen and (min-width: 1200px) and (max-width: 1599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-desktop {
+  @media screen and (min-width: 1024px) and (max-width: 1499px) {
+    @content;
+  }
+}
+
+@mixin for-medium-desktop {
+  @media screen and (min-width: 1366px) and (max-width: 1499px) {
+    @content;
+  }
+}
+
+@mixin for-medium-desktop-only {
+  @media screen and (min-width: 1200px) and (max-width: 1560px) {
+    @content;
+  }
+}
+
+@mixin for-medium-desktop-in {
+  @media screen and (min-width: 1500px) and (max-width: 1750px) {
+    @content;
+  }
+}
+
+@mixin for-medium-desktop-ex {
+  @media screen and (min-width: 1500px) and (max-width: 1560px) {
+    @content;
+  }
+}
+
+@mixin for-medium-desktop-up {
+  @media screen and (min-width: 1561px) and (max-width: 1750px) {
+    @content;
+  }
+}
+
+@mixin for-large-desktop-up {
+  @media screen and (min-width: 1561px) {
+    @content;
+  }
+}
+
+@mixin for-large-desktop-only {
+  @media screen and (min-width: 1500px) and (max-width: 4000px) {
+    @content;
+  }
+}
+
+@mixin only-for-IE {
+  @media all and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+  border-top-left-radius: $topleft;
+  border-top-right-radius: $topright;
+  border-bottom-right-radius: $bottomright;
+  border-bottom-left-radius: $bottomleft;
+  -webkit-border-top-left-radius: $topleft;
+  -webkit-border-top-right-radius: $topright;
+  -webkit-border-bottom-right-radius: $bottomright;
+  -webkit-border-bottom-left-radius: $bottomleft;
+  -moz-border-radius-topleft: $topleft;
+  -moz-border-radius-topright: $topright;
+  -moz-border-radius-bottomright: $bottomright;
+  -moz-border-radius-bottomleft: $bottomleft;
+}
