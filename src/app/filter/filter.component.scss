@@ -1,0 +1,40 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+@import '../../scss/typography';
+
+.filter-row {
+  border-bottom: 1px solid $app-gray-50;
+
+  .filter-btn {
+    border: 1px solid $app-gray-50;
+    border-radius: 3px;
+    min-width: 140px;
+    line-height: 34px;
+    box-shadow: none;
+    text-shadow: none;
+    color: $body-blue-900;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+    font-family: $font-family-medium;
+    margin-right: 16px;
+
+    &:hover {
+      background: $body-blue-900;
+      color: $white;
+    }
+  }
+
+  .filter-lt {
+    width: calc(100% - 620px);
+  }
+
+  .filter-rt {
+    width: 620px;
+
+    .ttl-listing-lbl {
+      color: $body-gray;
+      font-size: 18px;
+      font-family: $font-family-semibold;
+    }
+  }
+}

@@ -21,6 +21,12 @@
   width: 620px;
 }
 
+
+.map-listing-scroll {
+  overflow-y: auto;
+  height: calc(100% - 35px);
+}
+
 .map-listing-card {
   margin-bottom: 24px;
 
@@ -56,11 +62,6 @@
         display: flex;
         align-items: center;
         margin: 0 8px 0 0;
-
-        .act-lbl {
-          border: 1px solid $medium-success-color;
-          background: $light-success-color;
-        }
       }
 
       span {
@@ -120,4 +121,21 @@
       margin-top: 42px;
     }
   }
+}
+
+.map-listing-scroll::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 3px;
+}
+
+.map-listing-scroll::-webkit-scrollbar-track {
+  background: $app-gray-50;
+}
+
+.map-listing-scroll::-webkit-scrollbar-thumb {
+  background: $app-gray-150;
+}
+
+.map-listing-scroll::-webkit-scrollbar-thumb:hover {
+  background: $app-gray-150;
 }

@@ -1,40 +1,55 @@
+<app-filter></app-filter>
 <div class="middle-wrapper map-wrapper flex">
   <div class="map-area">
     <img src="/assets/images/map-img.jpg" alt="Map" class="map-placeholder" />
   </div>
 
-  <div class="map-listing p-6">
-    <div class-="map-listing-row">
-      <div class="map-listing-card flex items-center" *ngFor="let property of listing">
-        <div class="listing-img">
-          <img src="/assets/images/placeholder.jpg" alt="Placeholder">
-        </div>
-        <div class="listing-cont-dtls pl-6">
-          <div class="list-cont-top">
-            <div class="listing-price flex items-center">
-              <h6><i class="w-3 h-3 rounded-full mr-1 act-lbl"></i>$256,000</h6>
-              /
-              <span>44.16% LTV</span>
-            </div>
-            <div class="prop-bd">
-              <span><strong>3</strong>bd</span>
-              <span><strong>2.5</strong>ba</span>
-              <span><strong>2,120</strong>ft</span>
-              <span><strong>1996</strong>yr</span>
-            </div>
+  <div class="map-listing p-6 pr-0">
+    <div class="map-listing-scroll pr-6">
+      <div class="map-listing-row">
+        <div class="map-listing-card flex items-center" *ngFor="let property of listing">
+          <div class="listing-img">
+            <img src="/assets/images/placeholder.jpg" alt="Placeholder">
           </div>
+          <div class="listing-cont-dtls pl-6">
+            <div class="list-cont-top">
+              <div class="listing-price flex items-center">
+                <h6><i class="w-3 h-3 rounded-full mr-1 act-lbl"></i>$256,000</h6>
+                /
+                <span>44.16% LTV</span>
+              </div>
+              <div class="prop-bd">
+                <span><strong>3</strong>bd</span>
+                <span><strong>2.5</strong>ba</span>
+                <span><strong>2,120</strong>ft</span>
+                <span><strong>1996</strong>yr</span>
+              </div>
+            </div>
 
-          <div class="prop-cont-mid">
-            <p class="address"><strong>1101 Birkdale Dr</strong>Mebane, NC 27302</p>
-          </div>
+            <div class="prop-cont-mid">
+              <p class="address"><strong>1101 Birkdale Dr</strong>Mebane, NC 27302</p>
+            </div>
 
-          <div class="prop-cont-btm">
-            <span class="inline-flex items-center rounded-full app-badge success-badge"> Flip </span>
-            <span class="inline-flex items-center rounded-full app-badge"> Rental </span>
-            <span class="inline-flex items-center rounded-full app-badge"> Wholesale </span>
+            <div class="prop-cont-btm">
+              <span class="inline-flex items-center rounded-full app-badge success-badge"> Flip </span>
+              <span class="inline-flex items-center rounded-full app-badge"> Rental </span>
+              <span class="inline-flex items-center rounded-full app-badge"> Wholesale </span>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="pagination mt-6 flex items-center justify-between	">
+      <button mat-raised-button class="pagi-btn pagi-prev w-8 h-8 flex items-center justify-between"><img src="/assets/images/pagi-prev.svg" alt="Pagination"></button>
+      <ul class="flex items-center justify-center">
+        <li>1</li>
+        <li>2</li>
+        <li class="selected">3</li>
+        <li>4</li>
+        <li>5</li>
+      </ul>
+      <button mat-raised-button class="pagi-btn pagi-next w-8 h-8 flex items-center justify-between"><img src="/assets/images/pagi-next.svg" alt="Pagination"></button>
     </div>
   </div>
 </div>
